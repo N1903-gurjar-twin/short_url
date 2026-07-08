@@ -91,7 +91,7 @@ export default function Navbar() {
                   Sign In
                 </Link>
                 <Link
-                  href="/auth/signup"
+                  href="api/v1/auth/signup"
                   className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm rounded-lg transition-colors"
                 >
                   Sign Up
@@ -153,7 +153,7 @@ export default function Navbar() {
                   Sign In
                 </Link>
                 <Link
-                  href="/auth/signup"
+                  href="api/v1/auth/signup"
                   onClick={() => setIsOpen(false)}
                   className="block px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded font-medium text-sm text-center"
                 >

@@ -32,7 +32,7 @@ function getAuthHeaders(): Record<string, string> {
 
 // Auth endpoints
 export async function signup(request: SignupRequest): Promise<AuthResponse> {
-  const response = await fetch(`${API_BASE_URL}/auth/signup`, {
+  const response = await fetch(`${API_BASE_URL}/api/v1/auth/signup`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
