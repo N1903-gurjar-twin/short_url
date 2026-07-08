@@ -72,7 +72,7 @@ export async function getDetailedAnalytics(shortCode: string): Promise<DetailedA
 }
 
 export async function getMyUrls(): Promise<ShortenedUrl[]> {
-  const response = await fetch(`${API_BASE_URL}api/v1//analytics/my`, {
+  const response = await fetch(`${API_BASE_URL}api/v1/analytics/my`, {
     method: 'GET',
     headers: getAuthHeaders(),
   })

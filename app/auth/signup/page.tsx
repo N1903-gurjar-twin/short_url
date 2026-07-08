@@ -96,7 +96,7 @@ export default function SignupPage() {
                   type="text"
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                  placeholder="Naval"
+                  placeholder="Enter your name"
                   className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition dark:bg-slate-700 dark:text-white ${
                     validationErrors.fullName ? 'border-red-500' : 'border-gray-300 dark:border-slate-600'
                   }`}
