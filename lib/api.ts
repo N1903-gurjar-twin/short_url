@@ -55,7 +55,7 @@ export async function login(request: LoginRequest): Promise<AuthResponse> {
 
 // URL endpoints
 export async function createShortUrl(request: CreateUrlRequest): Promise<CreateUrlResponse> {
-  const response = await fetch(`${API_BASE_URL}/url/shorten`, {
+  const response = await fetch(`${API_BASE_URL}/api/v1/url/shorten`, {
     method: 'POST',
     headers: getAuthHeaders(),
     body: JSON.stringify(request),
